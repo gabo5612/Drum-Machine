@@ -1,0 +1,57 @@
+body{
+    background-color: rgb(169, 169, 219);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+#drum-machine{
+    width: 500px;
+    height: 300px;
+    background-color: beige;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#pad-bank{
+    height: 250px;
+    width: 200px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* definir 3 columnas de igual ancho */
+    grid-column-gap: 20px; 
+    justify-content: space-between;
+    align-items: center;
+    
+}
+#controls-container{
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    
+}
+.pantalla{
+    width: 70%;
+    height: 50px;
+    background-color: darkgreen;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+.drum-pad{
+    background-color: azure;
+    width: 50px;
+    height: 50px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    transition: 0.7s;
+    border-radius: 20px;
+    box-shadow: 3px 5px rgba(133, 133, 133, 0.427);
+}
+.drum-pad:active{
+    transition: 0.3s;
+    background-color: aqua;
+}
